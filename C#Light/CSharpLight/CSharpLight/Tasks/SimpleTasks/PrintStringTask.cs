@@ -6,7 +6,6 @@ public class PrintStringTask : IConsoleTask
 {
     public void RunTask()
     {
-        
         Console.Write("Как Вас зовут?=> ");
         var nameUser = $"Вас зовут {Console.ReadLine()}, ";
         Console.Write("Какой Ваш возраст?=> ");

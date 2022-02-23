@@ -6,16 +6,16 @@ internal class FirstTask : IConsoleTask
 {
     public void RunTask()
     {
-        decimal moneyInWallet = 100.55m;
-        int integerValue = 100;
-        double doubleFloatingNumber = 43.55d;
-        float floatingNumber = 34.223f;
+        var moneyInWallet = 100.55m;
+        var integerValue = 100;
+        var doubleFloatingNumber = 43.55d;
+        var floatingNumber = 34.223f;
         byte memoryByte = 255;
         short shortIntegerValue = 256;
         uint positiveIntegerValue = 299;
         ushort positiveShortIntegerValue = 2000;
-        string namePerson = "Магнэто";
-        char firstCharInNamePerson = namePerson[0];
+        var namePerson = "Магнэто";
+        var firstCharInNamePerson = namePerson[0];
         dynamic objectCom = new object();
         var noDynamicValue = floatingNumber + 23;
     }
