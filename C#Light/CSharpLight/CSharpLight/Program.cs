@@ -1,8 +1,7 @@
 ﻿using CSharpLight.Tasks;
 using CSharpLight.Tasks.Abstracts;
 
-RunConsoleTask(new ThreeImageToRow());
-RunConsoleTask(new Magazine());
+RunConsoleTask(new Polyclinic());
 
 static void RunConsoleTask(IConsoleTask task)
 {
