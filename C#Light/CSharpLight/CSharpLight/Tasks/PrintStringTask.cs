@@ -2,7 +2,7 @@
 
 namespace CSharpLight.Tasks;
 
-public class PrintString : IConsoleTask
+public class PrintStringTask : IConsoleTask
 {
     public void Run()
     {

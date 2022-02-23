@@ -2,7 +2,7 @@
 
 namespace CSharpLight.Tasks;
 
-public class Polyclinic : IConsoleTask
+public class PolyclinicTask : IConsoleTask
 {
     public void Run()
     {

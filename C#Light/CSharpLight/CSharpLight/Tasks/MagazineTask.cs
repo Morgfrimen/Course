@@ -3,7 +3,7 @@ using CSharpLight.Tasks.Abstracts;
 
 namespace CSharpLight.Tasks;
 
-public class Magazine : IConsoleTask
+public class MagazineTask : IConsoleTask
 {
     public void Run()
     {

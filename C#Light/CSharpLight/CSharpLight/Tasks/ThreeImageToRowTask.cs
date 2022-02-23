@@ -2,7 +2,7 @@
 
 namespace CSharpLight.Tasks;
 
-public class ThreeImageToRow : IConsoleTask
+public class ThreeImageToRowTask : IConsoleTask
 {
     public void Run()
     {
