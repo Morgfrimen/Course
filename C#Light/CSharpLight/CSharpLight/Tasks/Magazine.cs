@@ -7,22 +7,22 @@ public class Magazine : IConsoleTask
 {
     public void Run()
     {
-        const double DefaultGoldInWallet = 500;
-        const double DefaultCrystalInWallet = 5;
-        const double PriceCrystal = 100;
+        const double defaultGoldInWallet = 500;
+        const double defaultCrystalInWallet = 5;
+        const double priceCrystal = 100;
         Console.Write("Введите первоначальное количество золота в кошельке: ");
         if (!double.TryParse(Console.ReadLine(), NumberStyles.Any,CultureInfo.InvariantCulture, out var goldInWallet))
         {
-            goldInWallet = DefaultGoldInWallet;
+            goldInWallet = defaultGoldInWallet;
         }
-        Console.WriteLine($"Предложение купить кристалл по цене {PriceCrystal}, сколько кристаллов купить?");
+        Console.WriteLine($"Предложение купить кристалл по цене {priceCrystal}, сколько кристаллов купить?");
         if (!double.TryParse(Console.ReadLine(), NumberStyles.Any, CultureInfo.InvariantCulture, out var countBayCrystal))
         {
-            countBayCrystal = DefaultCrystalInWallet;
+            countBayCrystal = defaultCrystalInWallet;
         }
 
         var crystalInWallet = countBayCrystal;
-        goldInWallet = goldInWallet - countBayCrystal * PriceCrystal;
+        goldInWallet = goldInWallet - countBayCrystal * priceCrystal;
         Console.WriteLine($"Золота в кошельке: {goldInWallet}");
         Console.WriteLine($"Кристаллов в кошельке: {crystalInWallet}");
     }
