@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class ThreeImageToRowTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         var countUserImages = 52;
         var countPrintImageToRow = 3;

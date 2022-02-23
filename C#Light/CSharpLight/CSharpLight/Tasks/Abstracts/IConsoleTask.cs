@@ -2,5 +2,5 @@
 
 public interface IConsoleTask
 {
-    public void Run();
+    public void RunTask();
 }

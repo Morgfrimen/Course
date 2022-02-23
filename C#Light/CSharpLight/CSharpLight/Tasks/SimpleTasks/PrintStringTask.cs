@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class PrintStringTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         
         Console.Write("Как Вас зовут?=> ");

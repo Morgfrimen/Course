@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class PolyclinicTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         const uint DefaultPeople = 10;
         var receptionTime = new TimeOnly(0, 10, 0);

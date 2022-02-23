@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 internal class FirstTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         decimal moneyInWallet = 100.55m;
         int integerValue = 100;

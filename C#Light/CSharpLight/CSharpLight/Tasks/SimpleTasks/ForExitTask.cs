@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class ForExitTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         const string ExitCommand = "exit";
         Console.WriteLine("Программа с условием выхода");

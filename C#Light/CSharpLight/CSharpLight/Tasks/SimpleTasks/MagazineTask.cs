@@ -5,7 +5,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class MagazineTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         const double defaultGoldInWallet = 500;
         const double defaultCrystalInWallet = 5;

@@ -4,7 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class ForTask : IConsoleTask
 {
-    public void Run()
+    public void RunTask()
     {
         const uint DefaultCountPrintUserMessage = 10;
         Console.WriteLine("Введите сообщение");

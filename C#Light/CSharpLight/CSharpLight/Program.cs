@@ -7,7 +7,7 @@ static void RunConsoleTask(IConsoleTask task)
 {
     Console.Clear();
     Console.WriteLine(new string('-',50));
-    task.Run();
+    task.RunTask();
     Console.WriteLine(new string('-', 50));
     Console.ReadLine();
 }
