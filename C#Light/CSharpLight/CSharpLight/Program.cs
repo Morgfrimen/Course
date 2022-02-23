@@ -1,7 +1,7 @@
 ﻿using CSharpLightConsoleTask.Tasks.Abstracts;
-using CSharpLightConsoleTask.Tasks.SimpleTasks;
+using CSharpLightConsoleTask.Tasks.CurrencyConverter;
 
-RunConsoleTask(new ForExitTask());
+RunConsoleTask(new CurrencyConverter());
 
 static void RunConsoleTask(IConsoleTask task)
 {
@@ -9,5 +9,4 @@ static void RunConsoleTask(IConsoleTask task)
     Console.WriteLine(new string('-',50));
     task.RunTask();
     Console.WriteLine(new string('-',50));
-    Console.ReadLine();
 }
