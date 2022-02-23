@@ -8,5 +8,4 @@ static void RunConsoleTask(IConsoleTask task)
     Console.Clear();
     Console.WriteLine(new string('-',50));
     task.RunTask();
-    Console.WriteLine(new string('-',50));
 }
