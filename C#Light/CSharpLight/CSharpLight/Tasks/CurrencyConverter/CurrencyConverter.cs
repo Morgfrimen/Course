@@ -57,7 +57,7 @@ public class CurrencyConverter : IConsoleTask
                     Console.WriteLine("Сконвертировать в CurrencyX?");
                     Console.WriteLine($"1-да{Environment.NewLine}2-нет");
 
-                    if (short.TryParse(Console.ReadKey().KeyChar.ToString(), out commandConvertCurrency) is false)
+                    if (short.TryParse(Console.ReadKey().KeyChar.ToString(),out commandConvertCurrency) is false)
                     {
                         break;
                     }
@@ -71,6 +71,7 @@ public class CurrencyConverter : IConsoleTask
                             userBalanceCurrencyZ = sumConvert * 30;
                             break;
                     }
+
                     userBalanceCurrencyY -= sumConvert;
                     break;
                 case 3:
@@ -82,7 +83,7 @@ public class CurrencyConverter : IConsoleTask
                     Console.WriteLine("Сконвертировать в CurrencyY?");
                     Console.WriteLine($"1-да{Environment.NewLine}2-нет");
 
-                    if (short.TryParse(Console.ReadKey().KeyChar.ToString(), out commandConvertCurrency) is false)
+                    if (short.TryParse(Console.ReadKey().KeyChar.ToString(),out commandConvertCurrency) is false)
                     {
                         break;
                     }
@@ -96,10 +97,12 @@ public class CurrencyConverter : IConsoleTask
                             userBalanceCurrencyX = sumConvert * 50;
                             break;
                     }
+
                     userBalanceCurrencyZ -= sumConvert;
                     break;
                 case 4:
                     Console.Clear();
+
                     Console.Write($"Ваш баланс:{Environment.NewLine}" + $"CurrencyX -> {userBalanceCurrencyX}{Environment.NewLine}" +
                                   $"CurrencyY -> {userBalanceCurrencyY}{Environment.NewLine}" +
                                   $"CurrencyZ -> {userBalanceCurrencyZ}{Environment.NewLine}");
@@ -129,12 +132,18 @@ public class CurrencyConverter : IConsoleTask
     {
         Console.Clear();
         Console.WriteLine($"Какую сумму сконвертировать денег? Доступно: {userBalance}");
-        if (decimal.TryParse(Console.ReadLine(),out sumConvert) is false) return true;
-        if(sumConvert > userBalance)
+
+        if (decimal.TryParse(Console.ReadLine(),out sumConvert) is false)
+        {
+            return true;
+        }
+
+        if (sumConvert > userBalance)
         {
             Console.WriteLine("Недостаточно средств для конвертации");
             return true;
         }
+
         Console.Clear();
         return false;
     }
