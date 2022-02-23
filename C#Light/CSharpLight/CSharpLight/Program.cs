@@ -1,7 +1,7 @@
 ﻿using CSharpLight.Tasks;
 using CSharpLight.Tasks.Abstracts;
 
-RunConsoleTask(new Polyclinic());
+RunConsoleTask(new PrintString());
 
 static void RunConsoleTask(IConsoleTask task)
 {
