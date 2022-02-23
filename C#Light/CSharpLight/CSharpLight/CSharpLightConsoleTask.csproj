@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Tasks\Abstracts\" />
+    <Folder Include="Tasks\CurrencyConverter\Balances\" />
   </ItemGroup>
 
 </Project>

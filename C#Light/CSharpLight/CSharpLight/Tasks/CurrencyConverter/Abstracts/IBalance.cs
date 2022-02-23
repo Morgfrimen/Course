@@ -4,6 +4,7 @@ namespace CSharpLightConsoleTask.Tasks.CurrencyConverter.Abstracts;
 
 internal interface IBalance
 {
-    public CurrencyEnum CurrencyEnum { get; set; }
-    public IBalance ConvertCurrency(CurrencyEnum toCurrencyEnum);
+    public CurrencyX BalanceCurrencyX { get; set; }
+    public CurrencyY BalanceCurrencyY { get; set; }
+    public CurrencyZ BalanceCurrencyZ { get; set; }
 }
