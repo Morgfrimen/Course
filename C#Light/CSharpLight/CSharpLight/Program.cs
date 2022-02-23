@@ -1,7 +1,7 @@
 ﻿using CSharpLight.Tasks;
 using CSharpLight.Tasks.Abstracts;
 
-RunConsoleTask(new PrintStringTask());
+RunConsoleTask(new ForExitTask());
 
 static void RunConsoleTask(IConsoleTask task)
 {
