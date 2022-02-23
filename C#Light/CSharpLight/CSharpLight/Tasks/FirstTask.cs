@@ -1,8 +1,10 @@
-﻿internal class FirstTask
+﻿using CSharpLight.Tasks.Abstracts;
+
+internal class FirstTask : IConsoleTask
 {
-    internal void Run()
+    public void Run()
     {
-        decimal moneyInWalletIn = 100.55m;
+        decimal moneyInWallet = 100.55m;
         int integerValue = 100;
         double doubleFloatingNumber = 43.55d;
         float floatingNumber = 34.223f;
@@ -12,7 +14,7 @@
         ushort positiveShortIntegerValue = 2000;
         string namePerson = "Магнэто";
         char firstCharInNamePerson = namePerson[0];
-        dynamic objCom = new object(); //Обычно описывается для COM объектов или ActiveX объекты
+        dynamic objectCom = new object();
         var noDynamicValue = floatingNumber + 23;
     }
 }
