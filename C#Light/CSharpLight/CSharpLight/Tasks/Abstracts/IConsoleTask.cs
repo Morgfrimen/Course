@@ -1,4 +1,4 @@
-﻿namespace CSharpLight.Tasks.Abstracts;
+﻿namespace CSharpLightConsoleTask.Tasks.Abstracts;
 
 public interface IConsoleTask
 {

@@ -1,6 +1,6 @@
-﻿using CSharpLight.Tasks.Abstracts;
+﻿using CSharpLightConsoleTask.Tasks.Abstracts;
 
-namespace CSharpLight.Tasks;
+namespace CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 public class ForTask : IConsoleTask
 {

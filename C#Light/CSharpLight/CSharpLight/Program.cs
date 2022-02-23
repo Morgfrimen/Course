@@ -1,5 +1,5 @@
-﻿using CSharpLight.Tasks;
-using CSharpLight.Tasks.Abstracts;
+﻿using CSharpLightConsoleTask.Tasks.Abstracts;
+using CSharpLightConsoleTask.Tasks.SimpleTasks;
 
 RunConsoleTask(new ForExitTask());
 
